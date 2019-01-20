@@ -1,13 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import mrhProfilePhoto from '../images/mrhProfilePhoto.png'
+
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <span className="icon fa-microchip" />
+      <span className="icon fa-microchip"></span>
     </div>
     <div className="content">
       <div className="inner">
+        <img src={mrhProfilePhoto} alt="My ugly mug." />
         <h1>Dr. Matthew Halstead</h1>
         <p>
           A motivated, energetic nuclear engineer and radiation effects in
@@ -24,31 +27,49 @@ const Header = props => (
     </div>
     <nav>
       <ul>
-        <li>
-          <a 
-            onClick={() => {
-              props.onOpenArticle('intro')
-            }}
-          >
-            Intro
-          </a>
-        </li>
-        <li>
-          <a 
-            onClick={() => {
-              props.onOpenArticle('work')
-            }}
-          >
-            Work
-          </a>
-        </li>
-        <li>
-          <a 
+      <li>
+          <a
             onClick={() => {
               props.onOpenArticle('about')
             }}
           >
             About
+          </a>
+        </li>
+        <li>
+          <a 
+            onClick={() => {
+              props.onOpenArticle('workExperience')
+            }}
+          >
+            Work Experience
+          </a>
+        </li>
+        <li>
+          <a 
+            onClick={() => {
+              props.onOpenArticle('education')
+            }}
+          >
+            Education
+          </a>
+        </li>
+        <li>
+          <a 
+            onClick={() => {
+              props.onOpenArticle('skills')
+            }}
+          >
+            Skills
+          </a>
+        </li>
+        <li>
+          <a 
+            onClick={() => {
+              props.onOpenArticle('references')
+            }}
+          >
+            References
           </a>
         </li>
         <li>

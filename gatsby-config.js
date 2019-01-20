@@ -20,13 +20,5 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
-    {
-      resolve: `gatsby-plugin-web-font-loader`,
-      options: {
-        google: {
-          famiklies: ['Nunito']
-        }
-      }
-    }
   ],
 }

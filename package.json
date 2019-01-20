@@ -4,15 +4,24 @@
   "version": "1.0.0",
   "author": "Hunter Chang",
   "dependencies": {
-    "gatsby": "^2.0.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.12",
+    "gatsby": "^2.0.91",
+    "gatsby-plugin-google-fonts": "0.0.4",
     "gatsby-plugin-manifest": "^2.0.2",
     "gatsby-plugin-offline": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sass": "^2.0.1",
+    "gatsby-plugin-typography": "^2.2.5",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
     "node-sass": "^4.9.3",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-icons": "^3.3.0",
+    "react-typography": "^0.16.18",
+    "typography": "^0.16.18",
+    "typography-theme-funston": "^0.16.18",
+    "typography-theme-grand-view": "^0.16.18"
   },
   "keywords": [
     "gatsby"
@@ -27,6 +36,7 @@
     "start": "gatsby serve --port ${PORT}"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.6.3",
     "gh-pages": "^2.0.1",
     "prettier": "^1.14.2"
   },

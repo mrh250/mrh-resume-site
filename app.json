@@ -1,10 +1,10 @@
 {
-	"builldpacks": [
-		{
-			"url": "heroku/nodejs"
-		},
-		{
-			"url": "https://github.com/heroku/heroku-buildpack-static"
-		}
-	]
+  "builldpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-static"
+    }
+  ]
 }

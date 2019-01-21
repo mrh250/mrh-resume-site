@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 import mrhProfilePhoto from '../images/mrhProfilePhoto.png'
 import { navigate } from '@reach/router';
+import { Link } from 'gatsby'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -74,9 +75,7 @@ const Header = props => (
           </a>
         </li>
         <li>
-          <a onClick={() => {navigate('/Contact') }}>
-            Contact
-          </a>
+          <Link to='/Contact'> Contact </Link>
         </li>
       </ul>
     </nav>

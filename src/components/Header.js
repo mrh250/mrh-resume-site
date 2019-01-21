@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import mrhProfilePhoto from '../images/mrhProfilePhoto.png'
+import { navigate } from '@reach/router';
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -73,11 +74,7 @@ const Header = props => (
           </a>
         </li>
         <li>
-          <a
-            onClick={() => {
-              props.onOpenArticle('contact')
-            }}
-          >
+          <a onClick={() => {navigate('/contact') }}>
             Contact
           </a>
         </li>

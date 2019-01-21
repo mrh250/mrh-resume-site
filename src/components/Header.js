@@ -75,7 +75,7 @@ const Header = props => (
           </a>
         </li>
         <li>
-          <Link to='/cContact'> Contact </Link>
+          <Link to='/contact'> Contact </Link>
         </li>
       </ul>
     </nav>

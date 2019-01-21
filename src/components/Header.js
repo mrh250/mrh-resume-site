@@ -74,7 +74,7 @@ const Header = props => (
           </a>
         </li>
         <li>
-          <a onClick={() => {navigate('/contact') }}>
+          <a onClick={() => {navigate('/Contact') }}>
             Contact
           </a>
         </li>

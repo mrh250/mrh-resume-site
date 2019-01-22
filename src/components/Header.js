@@ -14,9 +14,7 @@ const Header = props => (
         <img src={mrhProfilePhoto} alt="My ugly mug." />
         <h1>Dr. Matthew Halstead</h1>
         <p>
-          A motivated, energetic nuclear engineer and radiation effects in
-          electronics physicist with a passion to get things done for your
-          organization.{' '}
+          <b>Motivated</b>, <em>energetic</em> nuclear engineer and radiation effects in electronics physicist with a passion for team-driven, empathetic leadership. <b>Experienced</b> with experimental- and simulation-based scientific research and strong interpersonal skills.  Lifelong desire to continue learning and expand <em>worldview</em>. {' '}
         </p>
         <ul className="icons">
           <li><a href="https://twitter.com/mrh250" target="_blank" rel="noopener noreferrer" className="icon fa-twitter"><span className="label">Twitter</span></a></li>

@@ -252,13 +252,13 @@ class Main extends React.Component {
           <h3>Job Related Training: </h3>
           <ul>
             <li>
-              Leading from Within (Crane Division University) -- 2017
+              Leading from Within (Crane Division University) -- 2016
             </li>
             <li>
-              DAWIA Science &amp; Technology Manager; Level III Certified -- 2017
+              DAWIA Science &amp; Technology Manager; Level III Certified -- 2016
             </li>
             <li>
-              DAWIA Engineering Level II Certified -- 2015
+              DAWIA Engineering Level II Certified -- 2014
             </li>
           </ul>
           <span className="image main">

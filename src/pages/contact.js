@@ -1,5 +1,6 @@
 import React from 'react'
 import { navigateTo } from 'gatsby-link'
+import contactMe from '../images/contactMe.gif'
 
 function encode(data) {
   return Object.keys(data)
@@ -35,7 +36,9 @@ export default class Contact extends React.Component {
   render() {
     return (
       <div>
-        <h1>Contact</h1>
+        <span className="image main">
+          <img src={contactMe} alt="" height="350px" />
+        </span>
         <form
           name="contact"
           method="post"
@@ -73,9 +76,13 @@ export default class Contact extends React.Component {
               <textarea name="message" onChange={this.handleChange} />
             </label>
           </p>
-          <p>
+          <span>
             <button type="submit">Send</button>
-          </p>
+            <button type="reset">Clear</button>
+            <a href="/">
+              <button type="button">Go Back</button>
+            </a>
+          </span>
         </form>
       </div>
     )

@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import mrhProfilePhoto from '../images/mrhProfilePhoto.png'
-import { navigate } from '@reach/router';
 import { Link } from 'gatsby'
 
 const Header = props => (
@@ -62,20 +61,14 @@ const Header = props => (
               props.onOpenArticle('skills')
             }}
           >
-            Skills
+            Skillset
           </a>
         </li>
         <li>
-          <a 
-            onClick={() => {
-              props.onOpenArticle('references')
-            }}
-          >
-            References
-          </a>
+          <Link to='/references'> References </Link>
         </li>
         <li>
-          <Link to='/contact'> Contact </Link>
+          <Link to='/contact'> Contact</Link>
         </li>
       </ul>
     </nav>

@@ -75,37 +75,29 @@ class Main extends React.Component {
         >
           <h2 className="major">Work</h2>
           <span className="image main">
-            <img src={trident} alt="" />
-          </span>
-          <h3> Strategic Systems Programs Office </h3>
-          <p>
-            <u>Title</u>: Engineer, Reentry Branch (SP2804) <br />
-            <u>Supervisor</u>: Hal Skoog, 202-433-5872 <br />
-            <u>Dates</u>: 09/2007 - 06/2009
-            <br />
-            As entry-level engineer, attended numerous training courses to learn
-            about packages, sub-systems, and overall system related to the
-            Trident II D5 strategic missile. Interfaced with prime contractor on
-            various projects.
-          </p>
-
-          <span className="image main">
             {' '}
             <img src={craneLogo} alt="" />{' '}
           </span>
           <h3> Naval Surface Warfare Center (NSWC) Crane </h3>
           <p>
             <u>Title</u>: Radiation Sciences Engineer <br />
-            <u>Supervisor</u>: Matt Bedel, 812-854-2042 <br />
+            <u>Supervisor</u>: Matt Bedel <br />
             <u>Dates</u>: 08/2014 - Present
             <br />
           </p>
           <p>
             <em>Research Engineer:</em> <br />
-            Principal Investigator and lead researcher executing two Internal
-            Research and Development projects for $350K+. Collaborated with
-            multiple internal and external partners. Collected, analyzed, and
-            presented findings.{' '}
+            <ul>
+              <li>
+                As Principal Investigator and lead researcher, executed two Internal Research &amp; Development (IR&amp;D) projects for $350K+.
+              </li>
+              <li>
+                Developed collaboration partnership teams made up of internal and external world-class personnel. Organizations include Sandia National Laboratory, Vanderbilt University, MIT, The Aerospace Corporation, and others.
+              </li>
+              <li>
+                Collected, analyzed, and presented findings at the Hardened Electronics and Radiation Technologies (HEART), Radiation Hardened Electronics Technology (RHET), and Nuclear & Space Radiation Effects Conference (NSREC) along with numerous technical interchange meetings. Presentations lead to publication in the Journal of Radiation Effects, Research, and Engineering (JRERE).
+              </li>
+            </ul>
           </p>
           <p>
             <em>
@@ -113,63 +105,85 @@ class Main extends React.Component {
               Defense Agency{' '}
             </em>
             : <br />
-            Principal Subject Matter Expert (SME) providing support to Missile
-            Defense Agency (MDA) Redesigned Kill Vehicle (RKV) program. Ensured
-            constant lines of communication with MDA RKV program, answered data
-            calls, and managed proper resourcing. Provided cost estimation for
-            radiation testing to extend RKV from Preliminary to Critical Design
-            Review stage. Attended unclassified and classified teleconferences
-            to provide survivability expertise. Proposed and executed plan to
-            obtain local classified (SIPR) terminal access by interfacing with
-            division funding, base physical security, and base communications
-            security personnel.{' '}
+            <ul>
+              <li>
+              Principal Subject Matter Expert (SME) leading team of 5 exceptional individuals and 3 FTE of effort providing radiation survivability support to the Missile Defense Agency (MDA) Redesigned Kill Vehicle (RKV) program.
+              </li>
+              <li>
+                Interfaced with division leadership and base physical security/communications personnel to propose, develop, and execute plan to improve local classified (SIPR) terminal access.
+              </li>
+            </ul>
           </p>
           <p>
             <em>Study Manager, Radiation Test Infrastructure</em>:<br />
-            Coordinated investigation of NSWC Crane radiation test requirements
-            compared against national radiation test infrastructure capacity.
-            Result of study was initiation of building critical test facilities
-            to support future radiation testing of strategic electronic
-            components. Coordinated with strategic missile system programs in
-            the U.S. Navy, U.S. Air Force, and MDA to learn program projections
-            driving future radiation test needs. Solicited input from national
-            radiation test facilities to plan expected facility capacity.
-            Learned VBA in Excel to build software to compare demand and
-            capacity, called the Crane Radiation Effects Test Infrastructure
-            Planning (CRETIP) tool.{' '}
+            <ul>
+              <li>
+                Coordinated Department-directed gap analysis comparing projected radiation test needs against national infrastructure capacity to ensure the continued ability of NSWC Crane to meet expanding customer demand.
+              </li>
+              <li>
+                Interfaced directly with strategic missile system programs (Navy, Air Force, and MDA), as well as national radiation test facilities such as Texas A&M Cyclotron, Little Mountain Test Facility for prompt dose rate, and White Sands Fast Burst Neutron Reactor.
+              </li>
+              <li>
+                Initiated multimillion-dollar construction project to support future radiation testing of strategic electronic components at NSWC Crane.
+              </li>
+            </ul>
           </p>
           <p>
             <em> Chair, Strategic Systems Hardware Working Group (SSHWG) </em>:{' '}
             <br />
-            Provided interface between NSWC Crane and strategic customers’
-            research programs. Standardized WG process to review, score, and
-            stratify yearly proposals.{' '}
+            <ul>
+              <li>
+                Lead dynamic, cross-department team of over 15 individuals tasked to interface with NSWC Crane and strategic customers’ S&T/R&D programs and to direct investment of over $7M/year in innovative research projects.
+              </li>
+              <li>
+                Developed and implemented standardized Working Group process to review, score, and stratify yearly IR&amp;D proposals.
+              </li>
+            </ul>
           </p>
           <p>
             <em>Lead, Modeling and Simulation for Radiation Sciences</em>:{' '}
             <br />
-            Revitalized high-performance scientific computing capability for
-            NSWC Crane Flight Division, which included classified and
-            unclassified, Linux-based Rocks (CentOS) cluster assets. Coordinated
-            team of scientific, security, and system administration personnel to
-            build unclassified system from 3 disconnected machines with 40 cores
-            to an HPC cluster with more than 500 cores. Expanded user base every
-            year.{' '}
+            <ul>
+              <li>
+                Revitalized high-performance scientific computing capability for NSWC Crane Flight Division, which included classified and unclassified, Linux-based Rocks (CentOS) cluster assets. Expanded user base every year.
+              </li>
+              <li>
+                Coordinated team of scientific, security, and system administration personnel and drove 8x computing resource expansion on unclassified system leading to the ability to perform setup and execution of Monte Carlo simulations in &lt;50% of the usual time.
+              </li>
+            </ul>
           </p>
           <p>
             <em>
               Responsible Technical Authority, Radiation Survivability SME
             </em>
             : <br />
-            Provided subject-matter expertise to assess new and emerging
-            technologies as candidates for radiation-hardened applications.
-            Wrote and coordinated revision of technical requirements and
-            contract documentation for a $20M/year Basic Ordering Agreement with
-            industrial partner for the sustainment of Strategic Radiation
-            Hardened Microelectronics manufacturing capability. Effort was in
-            support of OSD Title III critical infrastructure investment to
-            ensure national ability to procure rad-hard microelectronics for
-            defense applications. <br />
+            <ul>
+              <li>
+              Provided subject-matter expertise to assess new and emerging technologies as candidates for radiation-hardened applications.
+              </li>
+              <li>
+                Wrote technical requirements and derived contract documentation for $20M/year Basic Ordering Agreement with industrial partner for the sustainment of critical manufacturing capability in support of OSD Title III critical infrastructure investment to ensure national ability to procure rad-hard microelectronics for defense applications.
+              </li>
+            </ul>
+          </p>
+
+          <span className="image main">
+            <img src={trident} alt="" />
+          </span>
+          <h3> Strategic Systems Programs Office </h3>
+          <p>
+            <u>Title</u>: Engineer, Reentry Branch (SP2804) <br />
+            <u>Supervisor</u>: Hal Skoog <br />
+            <u>Dates</u>: 09/2007 - 06/2009
+            <br />
+            <ul>
+              <li>
+                Engineer supporting Trident II D5 strategic missile warheads, the W-76 and W-88 reentry bodies.
+              </li>
+              <li>
+                Developed and defended budget package for $5M environmental data collection system to better understand and quantify RB Stockpile-to-Target Sequence (STS) 
+              </li>
+            </ul>
           </p>
 
           {close}
@@ -190,10 +204,10 @@ class Main extends React.Component {
             <b>Ph.D. Nuclear Engineering</b>, Awarded September 2014 <br />
             <ul>
               <li>
-                Dissertation:{' '}
+                Dissertation topic:{' '}
                 <em>
-                  Investigating time and spectral dependence in neutron
-                  radiation environments for. semiconductor damage studies
+                <a href="https://apps.dtic.mil/docs/citations/ADA609702" target="_blank" rel="noopener noreferrer">Investigating
+                  time and spectral dependence in neutron radiation environments for semiconductor damage studies</a>
                 </em>
               </li>
               <li>
@@ -210,10 +224,10 @@ class Main extends React.Component {
             <b>M.S. Nuclear Engineering</b>, Awarded March 2011 <br />
             <ul>
               <li>
-                Thesis:{' '}
+                Thesis topic:{' '}
                 <em>
-                  Characterization of the Neutron Spectrum at the Indiana
-                  University NREP Neutron Source
+                <a href="https://apps.dtic.mil/docs/citations/ADA538851" target="_blank" rel="noopener noreferrer">Characterization
+                  of the energy spectrum at the Indiana University NREP Neutron Source</a>
                 </em>
               </li>
               <li>
@@ -239,7 +253,7 @@ class Main extends React.Component {
                 <b>Minor</b>: Military Sciences
               </li>
               <li>
-                <b>Relevant Coursework:</b> Nuclear reactor design, health physics
+                <b>Relevant Coursework:</b> Nuclear reactor design, health physics, Air Force ROTC leadership training
               </li>
             </ul>
           </p>
@@ -263,31 +277,35 @@ class Main extends React.Component {
               Leading from Within (Crane Division University) -- 2016
             </li>
             <li>
-              DAWIA Science &amp; Technology Manager; Level III Certified -- 2016
+              DAWIA Science &amp; Technology Manager; Level III Certified -- Nov 2016
             </li>
             <li>
               Developing Emerging Leaders for Tomorrow's Challenges -- 2015
             </li>
             <li>
-              DAWIA Engineering Level II Certified -- 2014
+              DAWIA Engineering Level II Certified -- Nov 2014
             </li>
           </ul>
           <span className="image main">
             <img src={keyboard} alt="" />
           </span>
-          <h3> Computational Competencies: </h3>
+          <h3> Technical Competencies: </h3>
           <ul>
             <li>
-              Data analysis tools: MATLAB, Excel
+              Data analysis tools: MATLAB, MS Excel
             </li>
             <li>
-              Radiation transport: MCNP, GEANT, SRIM
+              Radiation Transport: MCNP, GEANT, SRIM
             </li>
             <li>
-              OS: Windows, Mac, Linux (Ubuntu, CentOS, RHEL)
+              Operating Systems: <i class="fab fa-windows" style="font-size:22px"></i>, <i class="fab fa-apple" style="font-size:22px"></i>,
+              <i class="fab fa-linux" style="font-size:22px"></i> (<i class="icon-ubuntu" style="font-size:22px"></i>, <i class="icon-centos" style="font-size:22px"></i>,
+              <i class="icon-redhat" style="font-size:22px"></i>)
             </li>
             <li>
-              Programming languages: Python, Fortran, Java
+              Programming: <i class="fab fa-python" style="font-size:22px"></i>, Fortran, <i class="devicon-cplusplus-plain"
+                style="font-size:22px"></i>, <strong><i class="fab fa-java" style="font-size:22px"></i></strong>, <i
+                class="fab fa-js" style="font-size:22px"></i>, <i class="fab fa-html5" style="font-size:22px"></i>
             </li>
           </ul>
           {close}
@@ -304,7 +322,7 @@ class Main extends React.Component {
         <form
           name="contact"
           method="post"
-          action="/success"
+          action="/"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
           data-netlify-recaptcha="true"
@@ -357,13 +375,13 @@ class Main extends React.Component {
           </p>
           <p><em>Note: Anything with a <strong>*</strong> is a required field.</em></p>
           <span>
-            <button type="submit">Send</button>
-            <button type="reset">Clear</button>
-            <Recaptcha
+          <Recaptcha
               ref="recaptcha"
               sitekey={RECAPTCHA_KEY}
               onChange={this.handleRecaptcha}
             />
+            <button type="submit">Send</button>
+            <button type="reset">Clear</button>
           </span>
         </form>
       </div>

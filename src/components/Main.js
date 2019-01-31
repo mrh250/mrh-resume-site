@@ -11,6 +11,12 @@ import leadership from '../images/leadership.jpg'
 import keyboard from '../images/keyboard.jpg'
 import contactMe from '../images/contactMe.gif'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { fabWindows } from '@fortawesome/free-solid-svg-icons'
+
+library.add(fabWindows)
+
 const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
 
 class Main extends React.Component {
@@ -298,6 +304,7 @@ class Main extends React.Component {
               Radiation Transport: MCNP, GEANT, SRIM
             </li>
             <li>
+              OS: <FontAwesomeIcon name='windows' />
             </li>
             <li>
             </li>

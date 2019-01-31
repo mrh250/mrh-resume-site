@@ -3,6 +3,12 @@ import PropTypes from 'prop-types'
 
 import mrhProfilePhoto from '../images/mrhProfilePhoto.png'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
+library.add(fab)
+
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
@@ -16,10 +22,10 @@ const Header = props => (
           <b>Motivated</b>, <em>energetic</em> nuclear engineer and radiation effects in electronics physicist with a passion for team-driven, empathetic leadership. <b>Experienced</b> with experimental- and simulation-based scientific research and strong interpersonal skills.  Lifelong desire to continue learning and expand <em>worldview</em>. {' '}
         </p>
         <ul className="icons">
-          <li><a href="https://twitter.com/mrh250" target="_blank" rel="noopener noreferrer" className="icon fa-twitter"><span className="label">Twitter</span></a></li>
-          <li><a href="https://www.facebook.com/matt.halstead.754" target="_blank" rel="noopener noreferrer" className="icon fa-facebook"><span className="label">Facebook</span></a></li>
-          <li><a href="https://www.instagram.com/mrh250/" target="_blank" rel="noopener noreferrer" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
-          <li><a href="https://github.com/mrh250" target="_blank" rel="noopener noreferrer" className="icon fa-github"><span className="label">GitHub</span></a></li>
+          <li><a href="https://twitter.com/mrh250" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={['fab','twitter-square']}/></a></li>
+          <li><a href="https://www.facebook.com/matt.halstead.754" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={['fab','facebook']}/></a></li>
+          <li><a href="https://www.linkedin.com/in/matthewrhalstead/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={['fab','linkedin']}/></a></li>
+          <li><a href="https://github.com/mrh250" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={['fab','github']}/></a></li>
         </ul>
       </div>
     </div>

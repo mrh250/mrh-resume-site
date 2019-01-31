@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import mrhProfilePhoto from '../images/mrhProfilePhoto.png'
-import { Link } from 'gatsby'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -63,10 +62,13 @@ const Header = props => (
           </a>
         </li>
         <li>
-          <Link to='/references'> References </Link>
-        </li>
-        <li>
-          <Link to='/contact'> Contact</Link>
+          <a 
+            onClick={() => {
+              props.onOpenArticle('contact')
+            }}
+          >
+            Contact
+          </a>
         </li>
       </ul>
     </nav>

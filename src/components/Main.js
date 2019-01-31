@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Recaptcha from "react-google-recaptcha";
 
 import trident from '../images/trident.jpg'
 import integrity from '../images/integrity.jpg'
@@ -8,8 +9,15 @@ import AFITlogo from '../images/AFITlogo.jpg'
 import PSUlogo from '../images/PSUlogo.png'
 import leadership from '../images/leadership.jpg'
 import keyboard from '../images/keyboard.jpg'
+import contactMe from '../images/contactMe.gif'
+
+const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
 
 class Main extends React.Component {
+  handleRecaptcha = value => {
+    this.setState({"g-recaptcha-response": value});
+  };
+
   render() {
     let close = (
       <div
@@ -284,7 +292,83 @@ class Main extends React.Component {
           </ul>
           {close}
         </article>
+
+        <article id="contact"
+          className={`${this.props.article === 'contact' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : '' }`}
+          style={{ display: 'none' }}>
+        <div>
+        <span className="image main">
+          <img src={contactMe} alt="" />
+        </span>
+        <form
+          name="contact"
+          method="post"
+          action="/success"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          data-netlify-recaptcha="true"
+          onSubmit={this.handleSubmit}
+        >
+          <noscript>
+            <p>This form won't work with JavaScript disabled.</p>
+          </noscript>
+
+          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+          <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+            <label>
+              Don’t fill this out:{' '}
+              <input name="bot-field" onChange={this.handleChange} />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your name: <strong>*</strong>
+              <br />
+              <input type="text" name="name" onChange={this.handleChange} placeholder="Please enter your full name."
+                 required="required" data-error="Name is required."/>
+            </label>
+            <label>
+              Your email: <strong>*</strong>
+              <br />
+              <input type="email" name="email" onChange={this.handleChange} placeholder="Please enter your email address."
+                 required="required" data-error="Email is required."/>
+            </label>
+          </p>
+          <p>
+            <label for="form_need">Please specify your need: <strong>*</strong></label>
+            <select id="form_need" name="need" onChange={this.handleChange} required="required" 
+                placeholder="Click for options." data-error="Please specify your need.">
+              <option value=""></option>
+              <option value="Request contact information">Request contact information.</option>
+              <option value="Request references">Request references.</option>
+              <option value="Request both">Request contact information & references.</option>
+              <option value="Just send a message to me">Just send me a message.</option>
+              <option value="Other">Other</option>
+            </select>
+          </p>
+          <p>
+            <label>
+              Message:
+              <br />
+              <textarea name="message" onChange={this.handleChange} placeholder="Please enter any message you'd like me to see."/>
+            </label>
+          </p>
+          <p><em>Note: Anything with a <strong>*</strong> is a required field.</em></p>
+          <span>
+            <button type="submit">Send</button>
+            <button type="reset">Clear</button>
+            <Recaptcha
+              ref="recaptcha"
+              sitekey={RECAPTCHA_KEY}
+              onChange={this.handleRecaptcha}
+            />
+          </span>
+        </form>
       </div>
+      </article>
+    </div>
     )
   }
 }

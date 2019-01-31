@@ -10,12 +10,15 @@ import PSUlogo from '../images/PSUlogo.png'
 import leadership from '../images/leadership.jpg'
 import keyboard from '../images/keyboard.jpg'
 import contactMe from '../images/contactMe.gif'
+import dedication from '../images/dedication.jpg'
+import innovation from '../images/innovation.jpg'
+import respect from '../images/respect.jpg'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { fabWindows } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 
-library.add(fabWindows)
+library.add(fab)
 
 const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
 
@@ -49,25 +52,29 @@ class Main extends React.Component {
         >
           <h2 className="major">Who am I?</h2>
           <span className="image main">
-            <img src={integrity} alt="" />
+            <img src={integrity} width="40px" alt=""/>
+          </span>
+          <p >
+            I endeavor to do the right thing, all the time,
+            no matter who is watching.
+          </p>
+          <span className="image main">
+            <img src={dedication} alt="" align="middle" />
           </span>
           <p>
-            <em>Integrity: </em>I endeavor to do the right thing, all the time,
-            no matter who is watching.{' '}
+            I put forth maximum effort toward any project or job – all day, every day – and do so with enthusiasm and perseverance.
           </p>
+          <span className="image main">
+            <img src={innovation} alt="" align="middle" />
+          </span>
           <p>
-            <em> Reliability and Dedication: </em> I put forth maximum effort
-            toward any project or job – all day, every day – and do so with
-            enthusiasm and perseverance.
+            I strive to push boundaries in order to provide new solutions.
           </p>
+          <span className="image main">
+            <img src={respect} alt="" align="middle" />
+          </span>
           <p>
-            <em>Innovation:</em> I strive to push boundaries in order to provide
-            new solutions.
-          </p>
-          <p>
-            <em>Respectfulness: </em> I strive to treat team members with the
-            utmost respect in all interpersonal relationships; disagreement is
-            okay, as it can lead to innovative thinking, but contempt is not.
+            I strive to treat team members with the utmost respect in all interpersonal relationships; disagreement is okay, as it can lead to innovative thinking, but contempt is not.
           </p>
           {close}
         </article>
@@ -301,12 +308,25 @@ class Main extends React.Component {
               Data analysis tools: MATLAB, MS Excel
             </li>
             <li>
-              Radiation Transport: MCNP, GEANT, SRIM
+              Radiation transport: MCNP, GEANT, SRIM
             </li>
             <li>
-              OS: <FontAwesomeIcon name='windows' />
+              <big>
+              OS: <FontAwesomeIcon icon={['fab','windows'] } size="2x" />{',  '} 
+                  <FontAwesomeIcon icon={['fab','apple']} size="2x"/>{',  '}
+                  <FontAwesomeIcon icon={['fab','linux']} size="2x"/>{', ('}
+                  <FontAwesomeIcon icon={['fab','ubuntu']} size="2x"/>{',  '}
+                  <FontAwesomeIcon icon={['fab','centos']} size="2x"/>{',  '}
+                  <FontAwesomeIcon icon={['fab','redhat']} size="2x"/>{')'}
+              </big>
             </li>
             <li>
+              Programming languages: <FontAwesomeIcon icon={['fab','python'] } size="2x"/>{',  '} 
+                  {' fortran,  '}
+                  {' C++,  '}
+                  <FontAwesomeIcon icon={['fab','java']} size="2x"/>{',  '}
+                  <FontAwesomeIcon icon={['fab','js-square']} size="2x"/>{',  '}
+                  <FontAwesomeIcon icon={['fab','HTML5']} size="2x"/>{')'}
             </li>
           </ul>
           {close}
@@ -376,11 +396,12 @@ class Main extends React.Component {
           </p>
           <p><em>Note: Anything with a <strong>*</strong> is a required field.</em></p>
           <span>
-          <Recaptcha
+          {/*<Recaptcha
               ref="recaptcha"
               sitekey={RECAPTCHA_KEY}
               onChange={this.handleRecaptcha}
             />
+          */}
             <button type="submit">Send</button>
             <button type="reset">Clear</button>
           </span>

@@ -298,14 +298,8 @@ class Main extends React.Component {
               Radiation Transport: MCNP, GEANT, SRIM
             </li>
             <li>
-              Operating Systems: <i class="fab fa-windows" style="font-size:22px"></i>, <i class="fab fa-apple" style="font-size:22px"></i>,
-              <i class="fab fa-linux" style="font-size:22px"></i> (<i class="icon-ubuntu" style="font-size:22px"></i>, <i class="icon-centos" style="font-size:22px"></i>,
-              <i class="icon-redhat" style="font-size:22px"></i>)
             </li>
             <li>
-              Programming: <i class="fab fa-python" style="font-size:22px"></i>, Fortran, <i class="devicon-cplusplus-plain"
-                style="font-size:22px"></i>, <strong><i class="fab fa-java" style="font-size:22px"></i></strong>, <i
-                class="fab fa-js" style="font-size:22px"></i>, <i class="fab fa-html5" style="font-size:22px"></i>
             </li>
           </ul>
           {close}

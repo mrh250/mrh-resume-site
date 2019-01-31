@@ -396,12 +396,11 @@ class Main extends React.Component {
           </p>
           <p><em>Note: Anything with a <strong>*</strong> is a required field.</em></p>
           <span>
-          {/*<Recaptcha
+          <Recaptcha
               ref="recaptcha"
               sitekey={RECAPTCHA_KEY}
               onChange={this.handleRecaptcha}
             />
-          */}
             <button type="submit">Send</button>
             <button type="reset">Clear</button>
           </span>

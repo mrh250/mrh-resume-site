@@ -13,6 +13,7 @@ import contactMe from '../images/contactMe.gif'
 import dedication from '../images/dedication.jpg'
 import innovation from '../images/innovation.jpg'
 import respect from '../images/respect.jpg'
+import awards from '../images/awards.jpg'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -102,13 +103,13 @@ class Main extends React.Component {
             <em>Research Engineer:</em> <br />
             <ul>
               <li>
-                As Principal Investigator and lead researcher, executed two Internal Research &amp; Development (IR&amp;D) projects for $350K+.
+                Executed two Internal Research &amp; Development (IR&amp;D) projects with $350K+ budgets as Principal Investigator and lead researcher.
               </li>
               <li>
                 Developed collaboration partnership teams made up of internal and external world-class personnel. Organizations include Sandia National Laboratory, Vanderbilt University, MIT, The Aerospace Corporation, and others.
               </li>
               <li>
-                Collected, analyzed, and presented findings at the Hardened Electronics and Radiation Technologies (HEART), Radiation Hardened Electronics Technology (RHET), and Nuclear & Space Radiation Effects Conference (NSREC) along with numerous technical interchange meetings. Presentations lead to publication in the Journal of Radiation Effects, Research, and Engineering (JRERE).
+                Presented findings at the Hardened Electronics and Radiation Technologies (HEART), Radiation Hardened Electronics Technology (RHET), and Nuclear &amp; Space Radiation Effects Conference (NSREC), leading to publication in conference proceedings.
               </li>
             </ul>
           </p>
@@ -134,7 +135,7 @@ class Main extends React.Component {
                 Coordinated Department-directed gap analysis comparing projected radiation test needs against national infrastructure capacity to ensure the continued ability of NSWC Crane to meet expanding customer demand.
               </li>
               <li>
-                Interfaced directly with strategic missile system programs (Navy, Air Force, and MDA), as well as national radiation test facilities such as Texas A&M Cyclotron, Little Mountain Test Facility for prompt dose rate, and White Sands Fast Burst Neutron Reactor.
+                Interfaced directly with strategic missile system programs (Navy, Air Force, and MDA), as well as national radiation test facilities such as Texas A&amp;M Cyclotron, Little Mountain Test Facility for prompt dose rate, and White Sands Fast Burst Neutron Reactor.
               </li>
               <li>
                 Initiated multimillion-dollar construction project to support future radiation testing of strategic electronic components at NSWC Crane.
@@ -146,7 +147,7 @@ class Main extends React.Component {
             <br />
             <ul>
               <li>
-                Lead dynamic, cross-department team of over 15 individuals tasked to interface with NSWC Crane and strategic customers’ S&T/R&D programs and to direct investment of over $7M/year in innovative research projects.
+                Lead dynamic, cross-Department team of over 15 individuals tasked to interface with NSWC Crane and strategic customers’ S&amp;T/R&amp;D programs and to direct investment of over $7M/year in innovative research projects.
               </li>
               <li>
                 Developed and implemented standardized Working Group process to review, score, and stratify yearly IR&amp;D proposals.
@@ -284,7 +285,7 @@ class Main extends React.Component {
           <span className="image main">
             <img src={leadership} alt="" />
           </span>
-          <h3>Job Related Training: </h3>
+          <h3>Leadership Training: </h3>
           <ul>
             <li>
               Leading from Within (Crane Division University) -- 2016
@@ -297,6 +298,21 @@ class Main extends React.Component {
             </li>
             <li>
               DAWIA Engineering Level II Certified -- Nov 2014
+            </li>
+          </ul>
+          <span className="image main">
+            <img src={awards} alt="" />
+          </span>
+          <h3>Honors &amp; Professional Membership: </h3>
+          <ul>
+            <li>
+              DoD SMART Scholarship Awardee -- 2009 Cohort
+            </li>
+            <li>
+              IEEE Member since 2011
+            </li>
+            <li>
+              AFROTC Scholarship -- Field Training (Distinguished Graduate) -- 2002-2007
             </li>
           </ul>
           <span className="image main">

@@ -227,7 +227,7 @@ class Main extends React.Component {
                 </em>
               </li>
               <li>
-                <b>GPA</b>: 3.9 of a maximum 4.0 (72 Quarter Hours)
+                <b>GPA</b>: 3.8 f a maximum 4.0 (72 Quarter Hours)
               </li>
               <li>
                 <b>Relevant Coursework:</b> Solid State Physics, Quantum
@@ -247,7 +247,7 @@ class Main extends React.Component {
                 </em>
               </li>
               <li>
-                <b>GPA</b>: 3.7 of a maximum 4.0 (36 Quarter Hours)
+                <b>GPA</b>: 3.8 of a maximum 4.0 (36 Quarter Hours)
               </li>
               <li>
                 <b>Relevant Coursework:</b> Physics of nuclear explosions,

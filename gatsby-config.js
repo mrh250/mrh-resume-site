@@ -6,6 +6,7 @@ module.exports = {
     author: "Dr. Matthew Halstead",
     description: "The resume of Dr. Matt Halstead, showing off his knowledge, talents, and wit."
   },
+  pathPrefix: `/docs`,
   plugins: [
     'gatsby-plugin-react-helmet',
     {

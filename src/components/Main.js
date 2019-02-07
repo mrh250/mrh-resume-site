@@ -19,6 +19,8 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
+import { withPrefix } from 'gatsby'
+
 library.add(fab)
 
 const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY;
@@ -422,6 +424,16 @@ class Main extends React.Component {
           </span>
         </form>
       </div>
+      </article>
+      <article
+          id="resume"
+          className={`${
+            this.props.article === 'resume' ? 'active' : ''
+          } ${this.props.articleTimeout ? 'timeout' : ''}`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Resum&eacute;</h2>
+          <p>Click this <a href='https://www.dropbox.com/s/25avwecq3kisoly/Halstead-WebResume.pdf?dl=1' rel="noopener noreferrer" target="_blank"> link</a> to download my resume!</p>
       </article>
     </div>
     )

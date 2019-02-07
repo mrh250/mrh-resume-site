@@ -14,9 +14,7 @@ library.add(fas)
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <a href="/">
-      <FontAwesomeIcon icon={['fas', 'microchip']} size='3x' />
-      </a>
+      <FontAwesomeIcon icon={['fas', 'radiation']} size='3x' />
     </div>
     <div className="content">
       <div className="inner">
@@ -117,6 +115,15 @@ const Header = props => (
             }}
           >
             Contact
+          </a>
+        </li>
+        <li>
+          <a
+            onClick={() => {
+              props.onOpenArticle('resume')
+            }}
+          >
+            Resum&eacute;
           </a>
         </li>
       </ul>

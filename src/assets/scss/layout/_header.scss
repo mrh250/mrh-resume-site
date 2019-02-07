@@ -63,15 +63,16 @@
   }
 
   .logo {
-    width: 5.5rem;
-    height: 5.5rem;
-    line-height: 5.5rem;
+    width: 5rem;
+    height: 5rem;
+    line-height: 6.5rem;
     border: solid _size(border-width) _palette(border);
     border-radius: 100%;
 
-    .icon {
+    .fontawesomeicon {
+      padding-top: 2.2rem;
       &:before {
-        font-size: 2rem;
+        font-size: 3rem;
       }
     }
   }
